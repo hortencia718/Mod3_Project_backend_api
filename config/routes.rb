@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :likes, only: [:index, :update]
   resources :purchased_logs
   resources :reviews
   resources :scoops
